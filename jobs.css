@@ -1,0 +1,120 @@
+/* General Styling for Job Opportunities Page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9fb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #004aad;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    color: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 8px;
+}
+
+/* Main Content Section */
+.content-section {
+    width: 85%;
+    max-width: 800px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #004aad;
+}
+
+.content-section h2 {
+    font-size: 1.8em;
+    color: #004aad;
+    margin-top: 0;
+}
+
+.content-section h3 {
+    font-size: 1.6em;
+    color: #00357a;
+    border-bottom: 2px solid #e5ecf5;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.content-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #4d4d4d;
+    margin: 15px 0;
+}
+
+/* Link Styling */
+.content-section a {
+    color: #004aad;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.content-section a:hover {
+    color: #002d72;
+    text-decoration: underline;
+}
+
+/* List Styling */
+.content-section ul {
+    margin: 10px 0 20px 20px;
+    padding: 0;
+}
+
+.content-section ul li {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+/* Back Link Styling */
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #004aad;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #004aad;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #004aad;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #004aad;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

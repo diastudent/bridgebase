@@ -1,0 +1,118 @@
+/* General Styling for the Resources Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue for a welcoming feel */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 1.1em;
+    color: #e1e8ff;
+}
+
+/* Main Content Section */
+.content-section {
+    padding: 25px;
+    background-color: white;
+    margin: 25px auto;
+    width: 85%;
+    max-width: 700px;
+    border-left: 5px solid #0056b3;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content-section h2 {
+    color: #0056b3;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.content-section h3 {
+    color: #004494;
+    margin-top: 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #e1e8ff;
+    padding-bottom: 5px;
+}
+
+.content-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+/* Links in Content Section */
+.content-section a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-section a:hover {
+    color: #002d72;
+    text-decoration: underline;
+}
+
+/* List Styling */
+.content-section ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.content-section ul li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Back Link Styling */
+.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 2px solid #0056b3;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #e1e8ff;
+}

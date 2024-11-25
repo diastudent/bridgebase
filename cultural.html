@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Adaptation in the UAE</title>
+    <link rel="stylesheet" href="cultural.css">
+</head>
+<body>
+
+<header>
+    <h1>Cultural Adaptation in the UAE</h1>
+    <p>Discover essential tips and insights for adapting to life in the UAE</p>
+</header>
+
+<section class="content-section">
+    <h2>Understanding UAE Culture</h2>
+    <p>The UAE has a rich culture influenced by Islamic traditions and Emirati heritage. It’s essential to understand and respect local customs to smoothly transition and enjoy life here.</p>
+    
+    <!-- Buttons with External Links -->
+    <div class="collapsible-container">
+        <a href="https://heritageexpress.com/blog/6-uae-trraditions-and-customs-tourists-should-know" target="_blank" class="collapsible">Respecting Local Customs</a>
+        <a href="https://www.paxes.com/blog/business-etiquette-in-the-uae/" target="_blank" class="collapsible">Workplace Etiquette</a>
+        <a href="https://www.eventbrite.com/d/united-arab-emirates--dby/social/" target="_blank" class="collapsible">Social Gatherings</a>
+    </div>
+</section>
+
+<section class="content-section">
+    <h2>Exploring UAE Traditions</h2>
+    <!-- Image Carousel for Tradition Highlights -->
+    <div class="carousel">
+        <div class="carousel-image" id="carousel-image">
+            <img src="https://example.com/tradition1.jpg" alt="Traditional Emirati Dance" class="carousel-img">
+            <p class="carousel-caption">Al Ayyala Dance</p>
+        </div>
+        <button class="carousel-button" onclick="prevImage()">&#10094;</button>
+        <button class="carousel-button" onclick="nextImage()">&#10095;</button>
+    </div>
+</section>
+
+<section class="content-section">
+    <h2>Helpful Resources</h2>
+    <p>Check out these resources for more information on cultural adaptation:</p>
+    <ul class="resource-links">
+        <li><a href="https://www.uae-embassy.org/" target="_blank">UAE Embassy - Culture Guide</a></li>
+        <li><a href="https://visitabudhabi.ae/" target="_blank">Visit Abu Dhabi</a></li>
+        <li><a href="https://www.dubaiculture.gov.ae/" target="_blank">Dubai Culture & Arts Authority</a></li>
+    </ul>
+</section>
+
+<!-- Back to Homepage Button -->
+<div class="back-to-home">
+    <a href="homepage.html" class="home-button">Back to Homepage</a>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>Contact us for more assistance with cultural adaptation in the UAE.</p>
+</footer>
+
+<script>
+    // Image Carousel with Enhanced Options
+let currentImageIndex = 0;
+const images = [
+    { src: "ayalla.webp", caption: "Al Ayyala Dance" },
+    { src: "gahwa.jpg", caption: "Traditional Emirati Coffee" },
+    { src: "safari.png", caption: "Desert Safari Experience" },
+    { src: "falcon.jpg", caption: "Falconry in the Desert" },
+    { src: "henna.jpg", caption: "Henna Art" }
+];
+
+function updateCarousel() {
+    const carouselImage = document.getElementById("carousel-image").querySelector("img");
+    const carouselCaption = document.querySelector(".carousel-caption");
+    carouselImage.src = images[currentImageIndex].src;
+    carouselCaption.textContent = images[currentImageIndex].caption;
+}
+
+function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    updateCarousel();
+}
+
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateCarousel();
+}
+
+document.addEventListener("DOMContentLoaded", updateCarousel);
+
+</script>
+</body>
+</html>
